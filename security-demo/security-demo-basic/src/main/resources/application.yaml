@@ -1,0 +1,16 @@
+server:
+  port: 7100
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security_test?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  mvc:
+    view:
+      prefix: classpath:/static
